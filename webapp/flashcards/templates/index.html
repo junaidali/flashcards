@@ -1,0 +1,21 @@
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<h1>Welcome to the Flashcards App</h1>
+
+{% if categories %}
+    <h2>Choose from below categories:</h2>
+    <ul>
+        {% for c in categories %}
+        <li>{{c.name_en}} - {{c.name_ar}}</li>
+        {% endfor %}
+    </ul>
+
+{% endif %}

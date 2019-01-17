@@ -19,7 +19,7 @@ ADD ./webapp /opt/webapp/
 WORKDIR /opt/webapp
 
 # Generate static content
-RUN python manage.py collectstatic
+RUN python manage.py collectstatic --no-input
 
 # Expose is NOT supported by Heroku
 # EXPOSE 5000 		
