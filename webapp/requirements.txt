@@ -2,3 +2,5 @@ gunicorn
 django
 django-heroku
 django-bootstrap4
+dj-database-url
+psycopg2-binary
