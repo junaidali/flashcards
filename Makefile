@@ -10,6 +10,8 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True
 endef
 export DJANGO_SETTINGS_HEROKU_CONFIG
 
+APPNAME=flashcards-123
+
 build:
 	@echo "Building Containers"
 	@docker-compose build
@@ -32,10 +34,10 @@ publish:
 	@cp webapp/mysite/settings.py webapp/mysite/settings.py.bak
 	@echo "Adding Heroku config"	
 	@echo -e "$$DJANGO_SETTINGS_HEROKU_CONFIG" >> webapp/mysite/settings.py
-	@heroku container:push web -a flashcards-123
+	@heroku container:push web -a $(APPNAME)
 	@echo "Revert settings.py"
 	@mv webapp/mysite/settings.py.bak webapp/mysite/settings.py
 
 release:
 	@echo "Releasing Containers to Heroku"
-	@heroku container:release web -a flashcards-123
+	@heroku container:release web -a $(APPNAME)
