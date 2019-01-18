@@ -123,10 +123,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
-
-import dj_database_url
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
