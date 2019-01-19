@@ -31,12 +31,14 @@ clean:
 publish:
 	@echo "Publishing Containers to Heroku"
 	@echo "Backup current settings.py"
-	@cp webapp/mysite/settings.py webapp/mysite/settings.py.bak
+	@cp webapp/mysite/settings.py settings.py.bak
 	@echo "Adding Heroku config"	
 	@echo -e "$$DJANGO_SETTINGS_HEROKU_CONFIG" >> webapp/mysite/settings.py
+	@cho "Disabling Debug mode"
+	sed -i 's/^\(DEBUG\s=\s\).*/\1'False'/' webapp/mysite/settings.py
 	@heroku container:push web -a $(APPNAME)
 	@echo "Revert settings.py"
-	@mv webapp/mysite/settings.py.bak webapp/mysite/settings.py
+	@mv settings.py.bak webapp/mysite/settings.py
 
 release:
 	@echo "Releasing Containers to Heroku"

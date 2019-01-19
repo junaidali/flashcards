@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include, path
+from django.http import HttpResponseRedirect
 
 urlpatterns = [
+    url(r'^$', lambda r: HttpResponseRedirect('flashcards/') ),
     path(r'flashcards/', include('flashcards.urls')),
     url(r'^admin/', admin.site.urls),
 ]
