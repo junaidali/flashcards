@@ -34,7 +34,7 @@ publish:
 	@cp webapp/mysite/settings.py settings.py.bak
 	@echo "Adding Heroku config"	
 	@echo -e "$$DJANGO_SETTINGS_HEROKU_CONFIG" >> webapp/mysite/settings.py
-	@cho "Disabling Debug mode"
+	@echo "Disabling Debug mode"
 	sed -i 's/^\(DEBUG\s=\s\).*/\1'False'/' webapp/mysite/settings.py
 	@heroku container:push web -a $(APPNAME)
 	@echo "Revert settings.py"
