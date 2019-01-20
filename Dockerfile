@@ -5,9 +5,6 @@ ENV PYTHONUNBUFFERED 1
 # Install python and pip
 ADD ./webapp/requirements.txt /tmp/requirements.txt
 
-# Updated pip
-RUN pip3 install --upgrade pip
-
 # Install dependencies
 RUN apk add --no-cache --virtual .build-deps \
     ca-certificates gcc postgresql-dev linux-headers musl-dev \
