@@ -1,0 +1,16 @@
+{% extends "flashcards/includes/header.html.j2" %}
+
+{% block body %}
+<h1>Welcome to the Flashcards App</h1>
+
+{% if categories %}
+    <h2>Choose from below categories:</h2>
+    <ul>
+        {% for c in categories %}
+        <li>{{c.name_en}} - {{c.name_ar}}</li>
+        {% endfor %}
+    </ul>
+
+{% endif %}
+
+{% endblock %}

@@ -6,4 +6,4 @@ from .models import Category, Word
 def index(request):
     categories = Category.objects.all()
     context = {'categories': categories}
-    return render(request, 'index.html', context)
+    return render(request, 'flashcards/index.html.j2', context)
