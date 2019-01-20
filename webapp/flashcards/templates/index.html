@@ -1,21 +1,29 @@
-{# Load the tag library #}
-{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    {# Load the tag library #}
+    {% load bootstrap4 %}
 
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript jquery='full' %}
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
 
-{# Display django.contrib.messages as Bootstrap alerts #}
-{% bootstrap_messages %}
+    {# Display django.contrib.messages as Bootstrap alerts #}
+    {% bootstrap_messages %}
+  </head>
 
-<h1>Welcome to the Flashcards App</h1>
+  <div class="container">
+    <h1>Welcome to the Flashcards App</h1>
 
-{% if categories %}
-    <h2>Choose from below categories:</h2>
-    <ul>
-        {% for c in categories %}
-        <li>{{c.name_en}} - {{c.name_ar}}</li>
-        {% endfor %}
-    </ul>
+    {% if categories %}
+        <h2>Choose from below categories:</h2>
+        <ul>
+            {% for c in categories %}
+            <li>{{c.name_en}} - {{c.name_ar}}</li>
+            {% endfor %}
+        </ul>
 
-{% endif %}
+    {% endif %}
+  </div>
+</html>
