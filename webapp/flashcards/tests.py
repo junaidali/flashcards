@@ -16,7 +16,7 @@ class CategoryModelTests(TestCase):
         """
         If one category exists, it shoudl be displayed on homepage
         """
-        category1 = Category(name_en="DemoCategory", name_ar="عرض")
+        category1 = Category(name_primary="DemoCategory", name_secondary="عرض")
         category1.save()
         response = self.client.get(reverse('index'))
         self.assertEqual(response.status_code, 200)

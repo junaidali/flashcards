@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
             name='Category',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name_en', models.CharField(max_length=512)),
-                ('name_ar', models.CharField(max_length=512)),
-                ('description_en', models.TextField(max_length=1024)),
-                ('description_ar', models.TextField(max_length=1024)),
+                ('name_primary', models.CharField(max_length=512)),
+                ('name_secondary', models.CharField(max_length=512)),
+                ('description_primary', models.TextField(max_length=1024)),
+                ('description_secondary', models.TextField(max_length=1024)),
             ],
         ),
         migrations.CreateModel(

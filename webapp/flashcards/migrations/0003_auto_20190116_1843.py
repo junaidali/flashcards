@@ -16,12 +16,12 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name='category',
-            name='description_ar',
+            name='description_secondary',
             field=models.TextField(blank=True, max_length=1024),
         ),
         migrations.AlterField(
             model_name='category',
-            name='description_en',
+            name='description_primary',
             field=models.TextField(blank=True, max_length=1024),
         ),
     ]
