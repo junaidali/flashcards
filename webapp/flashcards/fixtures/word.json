@@ -1,0 +1,49 @@
+[
+    {
+        "fields": {
+            "word_primary": "Peace be upon you",
+            "word_secondary": "السَّلامُ عَلَيْكُم",
+            "categories": [1]
+        },
+        "model": "flashcards.Word",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "word_primary": "Peace be upon you too",
+            "word_secondary": "وَعَلَيْكُمُ السَّلام",
+            "categories": [1]
+        },
+        "model": "flashcards.Word",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "word_primary": "My name",
+            "word_secondary": "اِسْمي",
+            "categories": [1]
+        },
+        "model": "flashcards.Word",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "word_primary": "What",
+            "word_secondary": "ما",
+            "categories": [1],
+            "tags": [1]
+        },
+        "model": "flashcards.Word",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "word_primary": "Your name (male)",
+            "word_secondary": "اسْمُكَ",
+            "categories": [1],
+            "tags": []
+        },
+        "model": "flashcards.Word",
+        "pk": 5
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "fields": {
+            "tag_primary": "Question",
+            "tag_secondary": "سؤال"
+        },
+        "model": "flashcards.Tag",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "tag_primary": "Country",
+            "tag_secondary": "بلد"
+        },
+        "model": "flashcards.Tag",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "tag_primary": "Nationality",
+            "tag_secondary": "جنسية"
+        },
+        "model": "flashcards.Tag",
+        "pk": 3
+    }
+]
