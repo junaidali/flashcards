@@ -13,10 +13,20 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = "categories"
 
-class Word(models.Model):
-    en = models.CharField(max_length=1024)
-    ar = models.CharField(max_length=1024)
-    categories = models.ManyToManyField(Category)
+class Tag(models.Model):
+    tag_primary = models.CharField(max_length=1024)
+    tag_secondary = models.CharField(max_length=1024)
 
     def __str__(self):
-        return self.en
+        return self.tag_primary
+
+class Word(models.Model):
+    word_primary = models.CharField(max_length=1024)
+    word_secondary = models.CharField(max_length=1024)
+    categories = models.ManyToManyField(Category)
+    tags = models.ManyToManyField(Tag)
+    
+    def __str__(self):
+        return self.word_primary
+
+    

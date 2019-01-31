@@ -1,0 +1,74 @@
+[
+    {
+        "fields": {
+            "name_primary": "Greetings and Introductions",
+            "name_secondary": "التَّحيَّةُ والتَّعارُف"
+        },
+        "model": "flashcards.Category",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name_primary": "Family",
+            "name_secondary": "الأُسرَةُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name_primary": "Residence",
+            "name_secondary": "السَّكَنُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name_primary": "Everyday Life",
+            "name_secondary": "الحَياةُ اليَوْمِيَّةُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name_primary": "Food and Drink",
+            "name_secondary": "الطَّعامُ والشَّرابُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name_primary": "Prayers",
+            "name_secondary": "الصَّلاةُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name_primary": "Studying",
+            "name_secondary": "الدِّراسَةُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name_primary": "Work",
+            "name_secondary": "العَمَلُ"
+        },
+        "model": "flashcards.Category",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name_primary": "Human Body",
+            "name_secondary": "جِسْمُ الأِنْسانِ"
+        },
+        "model": "flashcards.Category",
+        "pk": 9
+    }
+]
