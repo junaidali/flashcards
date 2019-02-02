@@ -8,9 +8,10 @@ services:
 
 before_install:
   - docker build -t flashcards-123/web .
-  - docker run -p 5000:5000 flashcards-123/web -c "cd /opt/webapp; python manage.py test"
+  - docker run --name web -d flashcards-123/web
   - docker ps -a
 
 script:
+  - docker exec -it web sh 
   - cd /opt/webapp; python manage.py test
 

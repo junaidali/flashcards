@@ -1,3 +1,6 @@
+[Build Status]([![Build Status](https://travis-ci.org/junaidali/flashcards.svg?branch=master)](https://travis-ci.org/junaidali/flashcards))
+
+
 # flashcards
 Flashcards App that uses docker-compose based development environment.
 The project includes a Makefile to help with common administration tasks.
