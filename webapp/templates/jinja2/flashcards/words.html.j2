@@ -1,0 +1,18 @@
+{% extends "flashcards/includes/header.html.j2" %}
+
+{% block body %}
+
+<h1>{{ category.name_primary }} - {{ category.name_secondary }}</h1>
+
+{% if words %}
+    <h2>Choose from below words:</h2>
+    <ul>
+        {% for w in words %}
+        <li>{{w.word_secondary}}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h2>No words available in current category!</h2>
+{% endif %}
+
+{% endblock %}

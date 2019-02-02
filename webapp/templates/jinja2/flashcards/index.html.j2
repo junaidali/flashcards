@@ -7,7 +7,7 @@
     <h2>Choose from below categories:</h2>
     <ul>
         {% for c in categories %}
-        <li>{{c.name_primary}} - {{c.name_secondary}}</li>
+        <li><a href="{{ url('detail', args=[c.id]) }}">{{c.name_primary}} - {{c.name_secondary}}</a></li>
         {% endfor %}
     </ul>
 
