@@ -3,15 +3,8 @@ language: python
 python:
   - 3.6
 
-services:
-  - docker
-
-before_install:
-  - docker build -t flashcards-123/web .
-  - docker run --name web -d flashcards-123/web
-  - docker ps -a
+install:
+  - pip install webapp/requirements.txt
 
 script:
-  - docker exec -it web sh 
-  - cd /opt/webapp; python manage.py test
-
+  - cd webapp; python manage.py test

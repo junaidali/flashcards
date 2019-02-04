@@ -1,4 +1,4 @@
-[Build Status]([![Build Status](https://travis-ci.org/junaidali/flashcards.svg?branch=master)](https://travis-ci.org/junaidali/flashcards))
+[![Build Status](https://travis-ci.org/junaidali/flashcards.svg?branch=master)](https://travis-ci.org/junaidali/flashcards)
 
 
 # flashcards
