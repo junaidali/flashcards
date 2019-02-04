@@ -4,7 +4,7 @@ python:
   - 3.6
 
 install:
-  - pip install webapp/requirements.txt
+  - pip install -r ./webapp/requirements.txt
 
 script:
-  - cd webapp; python manage.py test
+  - cd ./webapp; python manage.py test
